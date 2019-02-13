@@ -24,6 +24,6 @@ public class ConcourseDemoApplication {
 
 	@RequestMapping("/hello")
 	public String hello() {
-		return "Hello Concourse Demo!!!";
+		return "Hello Concourse Demo Updated!!!";
 	}
 }
