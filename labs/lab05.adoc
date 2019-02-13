@@ -8,7 +8,7 @@
 +
 [source,bash]
 ---------------------------------------------------------------------
-$ fly -t gcp hijack -j pipeline-<LASTNAME>/deploy
+$ fly -t tutorial hijack -j pipeline-<LASTNAME>/deploy
 
 1: build #5, step: mvn-package, type: task
 2: build #6, step: mvn-package, type: check

@@ -22,14 +22,14 @@ $ fly -version                                                                  
 +
 [source,bash]
 ---------------------------------------------------------------------
-$ fly --target gcp login --concourse-url http://concourse.cloud.zwickey.net:8080 --team-name Main
+$ fly --target tutorial login --concourse-url http://127.0.0.1:8080 -u admin -p admin
 ---------------------------------------------------------------------
 
 . Execute the fly login command, entering the credentials again when prompted.
 +
 [source,bash]
 ---------------------------------------------------------------------
-$ fly -t gcp login                                                                                                                              1 ↵
+$ fly -t tutorial login                                                                                                                              1 ↵
 username: admin
 password:
 

@@ -24,7 +24,7 @@ jobs:
 +
 [source,bash]
 ---------------------------------------------------------------------
-$ fly -t gcp set-pipeline -p pipeline-<LASTNAME> -c pipeline.yml
+$ fly -t tutorial set-pipeline -p pipeline-<LASTNAME> -c pipeline.yml
 
 jobs:
   job hello has been added:

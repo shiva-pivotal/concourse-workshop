@@ -45,7 +45,7 @@ resources:
   type: git
   source:
     branch: master
-    uri: https://github.com/azwickey-pivotal/concourse-workshop
+    uri: https://github.com/shiva-pivotal/concourse-workshop
 - name: cloudfoundry
   type: cf
   source:
@@ -80,7 +80,14 @@ jobs:
 
 ---------------------------------------------------------------------
 
-. Update your concourse pipeline using the fly set-pipeline command.  This time we'll use the _-l_ flag to provide a variables file:
+. Update your pipeline in on the concourse server with the set-pipeline command.  As before, in the command below replace <LASTNAME> with your lastname.
++
+[source,bash]
+---------------------------------------------------------------------
+$ fly -t tutorial set-pipeline -p pipeline-<LASTNAME> -c pipeline.yml -l ./ci/credentials.yml
+---------------------------------------------------------------------
+
+This time we'll use the _-l_ flag to provide a variables file:
 +
 [source,bash]
 ---------------------------------------------------------------------
@@ -102,6 +109,6 @@ image::cf1.png[]
 +
 [source,bash]
 ---------------------------------------------------------------------
-$ curl http://concourse-demo-boot.apps.cloud.zwickey.net/version
-0.0.9-SNAPSHOT
+$ curl http://concourse-demo-boot.cfapps.haas-81.pez.pivotal.io/version
+0.1.0-SNAPSHOT
 ---------------------------------------------------------------------
