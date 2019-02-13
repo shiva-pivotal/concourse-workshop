@@ -1,20 +1,18 @@
 = Prerequisites For Labs
 
-== Install FLY CLI
+== Install CF CLI and GIT CLI
+- [Cloud Foundry CLI](https://console.run.pivotal.io/tools)
+- [Git Client](https://git-scm.com/downloads)
 
-. In a browser navigate to http://concourse.run.cloud.zwickey.net/ and select the icon associated with your platform:
-+
-image::fly.png[]
+**Verify the installation**
+``` 
+$ cf --version
+$ git --version 
+```
 
-. Add the downloaded binary to your system path
+== Install Concourse && FLY CLI
 
-. After adding to your system path you should be able to execute the fly command from a terminal window:
-+
-[source,bash]
----------------------------------------------------------------------
-$ fly -version                                                                                                                                  1 ↵
-2.6.0
----------------------------------------------------------------------
+. In a browser navigate to https://concoursetutorial.com/ and follow the instructions in "Getting Started" section.
 
 == Target and Login to Concourse Env
 
@@ -38,7 +36,7 @@ target saved
 
 == Create a GIT repository to hold your concourse pipeline and artifacts
 
-. Fork this git repository:  https://github.com/azwickey-pivotal/concourse-workshop
+. Fork this git repository:  https://github.com/shiva-pivotal/concourse-workshop
 
 . Clone this repository to your local desktop
 +

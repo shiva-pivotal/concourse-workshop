@@ -45,14 +45,14 @@ jobs:
 
 apply configuration? [yN]: y
 pipeline created!
-you can view your pipeline here: http://concourse.cloud.zwickey.net:8080/teams/main/pipelines/pipeline-zwickey
+you can view your pipeline here: http://127.0.0.1:8080
 
 the pipeline is currently paused. to unpause, either:
   - run the unpause-pipeline command
   - click play next to the pipeline in the web ui
 ---------------------------------------------------------------------
 
-. You'll note the command informs us that initially our pipeline is in a paused state.  We could unpause from the commandline, but instead we'll unpause and execute the pipeline from the Concourse web UI.  In a browser navigate to http://concourse.run.cloud.zwickey.net/ and click the "login" link in the upper right corner.
+. You'll note the command informs us that initially our pipeline is in a paused state.  We could unpause from the commandline, but instead we'll unpause and execute the pipeline from the Concourse web UI.  In a browser navigate to http://127.0.0.1:8080 and click the "login" link in the upper right corner.
 
 . Select the "main" team to login to and use the credentials previously provided to authenticate
 +

@@ -23,7 +23,7 @@ public class ConcourseDemoApplication {
 	}
 
 	@RequestMapping("/hello")
-	public String getVersion() {
-		return "Hello to Concourse Demo !!!";
+	public String hello() {
+		return "Hello Concourse Demo!!!";
 	}
 }
