@@ -13,3 +13,12 @@ jobs:
     trigger: true
   - task: mvn-test
     file: git-assets/ci/tasks/mvn-test.yml
+- name: deploy
+  public: true
+  plan:
+  - get: git-assets
+    trigger: true
+    passed:
+      - unit-test
+  - task: mvn-package
+    file: git-assets/ci/tasks/mvn-package.yml

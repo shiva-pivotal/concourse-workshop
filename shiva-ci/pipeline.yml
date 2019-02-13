@@ -1,6 +1,15 @@
+resources:
+- name: git-assets
+  type: git
+  source:
+    branch: master
+    uri: https://github.com/shiva-pivotal/concourse-workshop
+
 jobs:
 - name: hello
   plan:
+  - get: git-assets
+    trigger: true
   - task: howdy
     config:
       platform: linux
